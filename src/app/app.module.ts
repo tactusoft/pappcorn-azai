@@ -10,6 +10,7 @@ import { FooterModule } from './shared/footer/footer.module';
 import { SidebarModule } from './sidebar/sidebar.module';
 
 import { AppComponent } from './app.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { LightLayoutComponent } from './layouts/light-layout/light-layout.component';
@@ -30,7 +31,7 @@ import { LightLayoutComponent } from './layouts/light-layout/light-layout.compon
     AdminLayoutComponent,
     LightLayoutComponent
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
