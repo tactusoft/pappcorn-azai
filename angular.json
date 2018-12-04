@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lbd-free-angular-cli": {
+    "azzai": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -56,18 +56,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "lbd-free-angular-cli:build"
+            "browserTarget": "azzai:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "lbd-free-angular-cli:build:production"
+              "browserTarget": "azzai:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lbd-free-angular-cli:build"
+            "browserTarget": "azzai:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "lbd-free-angular-cli-e2e": {
+    "azzai-e2e": {
       "root": "e2e",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -115,7 +115,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "lbd-free-angular-cli:serve"
+            "devServerTarget": "azzai:serve"
           }
         },
         "lint": {
@@ -130,7 +130,7 @@
       }
     }
   },
-  "defaultProject": "lbd-free-angular-cli",
+  "defaultProject": "azzai",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
